@@ -43,8 +43,12 @@
                 <li><a href="#">Перфораторы</a></li>
             </ul>
             <section>
-                <h2>Фильтры</h2>
+                <h2>Фильтр:</h2>
                 <form action="get">
+                    <fieldset>
+                        <legend>Цена:</legend>
+                        <input type="range" min="0" max="30000" step="1">
+                    </fieldset>
                     <fieldset>
                         <legend>Производители:</legend>
                         <label><input type="checkbox" checked>Bosh</label>
@@ -63,6 +67,18 @@
             </section>
             <section>
                 <h2>Перфораторы</h2>
+                <div>
+                  <p>Сортировка:</p>
+                  <ul>
+                    <li><a href="#">По цене</a></li>
+                    <li><a href="#">По типу</a></li>
+                    <li><a href="#">По функционалу</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="#">По возрастанию</a></li>
+                    <li><a href="#">По убыванию</a></li>
+                  </ul>
+                </div>
                 <ul>
                     <li>
                         <h3>Перфоратор BOSCH BFG 3000</h3>
@@ -116,7 +132,19 @@
                         <button type="button">12500 Р.</button>
                     </li>
                 </ul>
+                <button type="button" disabled>1</button>
+                <button type="button">2</button>
+                <button type="button">3</button>
+                <button type="button">Следующая</button>
             </section>
+            <article>
+                <h2>Пара слов о перфораторах</h2>
+                <p>
+                  Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+                  Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>
+                  В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+                </p>
+            </article>
         </main>
         <footer>
             <section>
