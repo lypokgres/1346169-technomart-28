@@ -9,7 +9,9 @@
 <body>
   <header>
     <a href="#">Техномарт</a>
-    <input type="search" name="search" placeholder="Поиск:">
+    <form>
+      <label><input type="search" name="search" placeholder="Поиск:"></label>
+    </form>
     <a href="#">Закладки: 0</a>
     <a href="#">Корзина: 10</a>
     <a href="#">Оформить заказ</a>
@@ -22,10 +24,9 @@
       +7 (812) 555-05-55<br>
       г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
     </p>
-    <p>
+    <button type="button" aria-label="Выйти из учётной записи">
       Равшан Джамшутович
-      <a href="#"><img src="img/icon-login.svg" width="20" height="17" alt="Выйти из учетной записи"></a>
-    </p>
+    </button>
     <a href="#">Мои заказы</a>
     <a href="#">Личный кабинет</a>
     <nav>
@@ -51,13 +52,13 @@
     <div>
       <p>Сортировка:</p>
       <ul>
-        <li><a href="#">По цене</a></li>
-        <li><a href="#">По типу</a></li>
-        <li><a href="#">По функционалу</a></li>
+        <li><button type="button">По цене</button></li>
+        <li><button type="button">По типу</button></li>
+        <li><button type="button">По функционалу</button></li>
       </ul>
       <ul>
-        <li><a href="#">По возрастанию</a></li>
-        <li><a href="#">По убыванию</a></li>
+        <li><button type="button">По возрастанию</button></li>
+        <li><button type="button">По убыванию</button></li>
       </ul>
     </div>
     <ul>
@@ -65,80 +66,86 @@
         <h3>Перфоратор BOSCH BFG 6000</h3>
         <span>30500 Р.</span>
         <img src="img/snippet-945 copy 2.jpg" width="144" height="128" alt="BOSCH BFG 6000">
-        <button type="button">25500 Р.</button>
+        <div>25500 Р.</div>
       </li>
       <li>
         <h3>Перфоратор BOSCH BFG 6000</h3>
         <span>30500 Р.</span>
         <img src="img/snippet-945 copy 2.jpg" width="144" height="128" alt="BOSCH BFG 6000">
-        <button type="button">25500 Р.</button>
+        <div>25500 Р.</div>
       </li>
       <li>
         <h3>Перфоратор BOSCH BFG 6000</h3>
         <span>30500 Р.</span>
         <img src="img/snippet-945 copy 2.jpg" width="144" height="128" alt="BOSCH BFG 6000">
-        <button type="button">25500 Р.</button>
+        <div>25500 Р.</div>
       </li>
       <li>
         <h3>Перфоратор BOSCH BFG 3000</h3>
         <span>22500 Р.</span>
         <img src="img/snippet-18927 copy 3.jpg" width="127" height="112" alt="BOSCH BFG 3000">
-        <button type="button">15500 Р.</button>
+        <div>15500 Р.</div>
       </li>
       <li>
         <h3>Перфоратор BOSCH BFG 6000</h3>
         <span>30500 Р.</span>
         <img src="img/snippet-945 copy 2.jpg" width="144" height="128" alt="BOSCH BFG 6000">
-        <button type="button">25500 Р.</button>
+        <div>25500 Р.</div>
       </li>
       <li>
         <h3>Перфоратор BOSCH BFG 2000</h3>
         <img src="img/snippet-18927 copy 3.jpg" width="127" height="112" alt="BOSCH BFG 2000">
-        <button type="button">12500 Р.</button>
+        <div>12500 Р.</div>
       </li>
       <li>
         <h3>Перфоратор BOSCH BFG 3000</h3>
         <span>22500 Р.</span>
         <img src="img/snippet-18927 copy 3.jpg" width="127" height="112" alt="BOSCH BFG 3000">
-        <button type="button">15500 Р.</button>
+        <div>15500 Р.</div>
       </li>
       <li>
         <h3>Перфоратор BOSCH BFG 6000</h3>
         <span>30500 Р.</span>
         <img src="img/snippet-945 copy 2.jpg" width="144" height="128" alt="BOSCH BFG 6000">
-        <button type="button">25500 Р.</button>
+        <div>25500 Р.</div>
       </li>
       <li>
         <h3>Перфоратор BOSCH BFG 2000</h3>
         <img src="img/snippet-18927 copy 3.jpg" width="127" height="112" alt="BOSCH BFG 2000">
-        <button type="button">12500 Р.</button>
+        <div>12500 Р.</div>
       </li>
     </ul>
-    <button type="button" disabled>1</button>
-    <button type="button">2</button>
-    <button type="button">3</button>
-    <button type="button">Следующая</button>
+    <ul>
+      <li><a href="#" aria-label="Первая страница">1</a></li>
+      <li><a href="#" aria-label="Вторая страница">2</a></li>
+      <li><a href="#" aria-label="Третья страница">3</a></li>
+      <li><a href="#" aria-label="Следующая страница">Следующая</a></li>
+    </ul>
     <aside>
       <h2>Фильтр:</h2>
-      <form action="get">
+      <form action="https://echo.htmlacademy.ru" method="GET">
         <fieldset>
           <legend>Цена:</legend>
           <input type="range" min="0" max="30000" step="1">
         </fieldset>
         <fieldset>
           <legend>Производители:</legend>
-          <label><input type="checkbox" checked>Bosh</label>
-          <label><input type="checkbox">Интерскол</label>
-          <label><input type="checkbox" checked>Makita</label>
-          <label><input type="checkbox">Dewalt</label>
-          <label><input type="checkbox">Hitachi</label>
+          <ul>
+            <li><label><input type="checkbox" name="bosh" checked>Bosh</label></li>
+            <li><label><input type="checkbox" name="interskol">Интерскол</label></li>
+            <li><label><input type="checkbox" name="makita" checked>Makita</label></li>
+            <li><label><input type="checkbox" name="dewalt">Dewalt</label></li>
+            <li><label><input type="checkbox" name="hitachi">Hitachi</label></li>
+          </ul>
         </fieldset>
         <fieldset>
           <legend>Питание</legend>
-          <label><input type="radio" name="power" value="battery" checked>Аккумуляторные</label>
-          <label><input type="radio" name="power" value="wire">Сетевые</label>
+          <ul>
+            <li><label><input type="radio" name="power" value="battery" checked>Аккумуляторные</label></li>
+            <li><label><input type="radio" name="power" value="wire">Сетевые</label></li>
+          </ul>
         </fieldset>
-        <button type="button">Показать</button>
+        <button type="submit">Показать</button>
       </form>
     </aside>
     <article>
