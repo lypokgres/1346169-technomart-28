@@ -49,8 +49,6 @@ img {
   color: var(--basic-white);
   background-color: var(--basic-red);
   text-transform: uppercase;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
 }
@@ -67,10 +65,10 @@ img {
   background-color: var(--basic-red);
   display: block;
   width: 220px;
-  height: 35px;
   text-align: center;
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
   padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .header-logo:active {
@@ -81,8 +79,6 @@ img {
 .header-cart,
 .header-order {
   color: var(--basic-white);
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 24px;
 }
@@ -108,7 +104,6 @@ img {
 .header-description {
   color: var(--basic-red);
   font-style: italic;
-  font-weight: normal;
   font-size: 16px;
   line-height: 23px;
 }
@@ -121,10 +116,9 @@ img {
   line-height: 30px;
 }
 
-.header-adderss {
+.header-address {
   color: var(--basic-grey);
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
 }
@@ -132,8 +126,6 @@ img {
 .log-in,
 .sign-in {
   color: var(--basic-black);
-  font-style: normal;
-  font-weight: normal;
   font-size: 21px;
   line-height: 21px;
 }
@@ -155,8 +147,6 @@ img {
 
 .header-nav a {
   color: var(--basic-white);
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 24px;
 }
@@ -175,8 +165,7 @@ img {
 
 .about-title,
 .contacts-title {
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -185,24 +174,20 @@ img {
 .about p,
 .contacts p {
   font-family: 'PT Sans', sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 13px;
   line-height: 24px;
 }
 
 .about-list {
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 24px;
 }
 
 .about-button {
   width: 220px;
-  height: 27px;
   text-align: center;
   padding-top: 11px;
+  padding-bottom: 9px;
 }
 
 .contacts-map {
@@ -212,7 +197,8 @@ img {
 
 .contacts-button {
   width: 300px;
-  height: 38px;
+  padding-top: 11px;
+  padding-bottom: 9px;
 }
 
 .footer {
@@ -222,18 +208,16 @@ img {
 .footer-logo {
   display: block;
   width: 220px;
-  height: 48px;
   background-color: var(--basic-red);
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
   text-align: center;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .footer-nav,
 .footer-nav-list a {
   color: var(--basic-background);
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 24px;
 }
@@ -254,8 +238,6 @@ img {
 
 .product-nav-list a {
   color: var(--special-light-yellow);
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 24px;
 }
@@ -267,8 +249,6 @@ img {
 .social {
   background-color: var(--special-navy-blue);
   color: var(--basic-white);
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 18px;
 }
@@ -323,7 +303,7 @@ img {
 
 /* catalog */
 
-.catalog, 
+.catalog,
 .filter {
   font-family: 'PT Sans', sans-serif;
 }
@@ -347,11 +327,10 @@ img {
   color: var(--basic-red);
 }
 
-.button-exit:active, 
+.button-exit:active,
 .catalog-user a:active {
   color: var(--basic-light-grey);
 }
-
 
 .breadcrumbs a {
   font-size: 13px;
@@ -401,10 +380,11 @@ img {
 
 .filter-button {
   width: 220px;
-  height: 38px;
   background-color: var(--basic-white);
   color: var(--basic-black);
   border: 1px solid #E5E5E5;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .sort {
@@ -412,13 +392,12 @@ img {
 }
 
 .catalog-list h4 {
-  font-weight: bold;
   font-size: 18px;
   line-height: 20px;
 }
 
 .catalog-item span {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 17px;
   line-height: 18px;
   text-decoration: line-through;
@@ -428,26 +407,21 @@ img {
 
 .price {
   width: 141px;
-  height: 38px;
   background-color: var(--basic-red);
   color: var(--basic-white);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 17px;
   line-height: 18px;
   text-transform: uppercase;
-  margin-top: 13px;
-  margin-left: 27px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .catalog-item {
-  box-sizing: border-box;
   width: 220px;
-  height: 318px;
   border: 1px solid #EAEAEA;
   text-align: center;
   list-style: none;
-  padding-left: 18px;
-  padding-right: 17px;
 }
 
 .popup-cart {
