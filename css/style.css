@@ -406,7 +406,7 @@ img {
 }
 
 .price {
-  width: 141px;
+  width: 109px;
   background-color: var(--basic-red);
   color: var(--basic-white);
   font-weight: 700;
@@ -415,12 +415,14 @@ img {
   text-transform: uppercase;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 32px;
+  clip-path: polygon(0 0, 121px 0, 100% 50%, 121px 100%, 0 100%);
+  border-radius: 3px 0 0 3px;
 }
 
 .catalog-item {
   width: 220px;
   border: 1px solid #EAEAEA;
-  text-align: center;
   list-style: none;
 }
 
