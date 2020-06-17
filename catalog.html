@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -9,18 +9,24 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="page-body">
+<body class="page-body inner-page">
   <header class="header">
     <div class="header-menu">
       <div class="container">
-        <a href="#" class="header-logo">
+        <a href="index.html" class="header-logo">
           <img src="img/logo-technomart.svg" alt="Логотип" width="108" height="18">
         </a>
         <form class="header-search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 
+            13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 
+            0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 
+            2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
+          </svg>
           <label><input type="search" name="search" placeholder="Поиск:"></label>
         </form>
         <a href="#" class="header-bookmarks">Закладки: 0</a>
-        <a href="#" class="header-cart">Корзина: 0</a>
+        <a href="#" class="header-cart">Корзина: 10</a>
         <a href="#" class="header-order">Оформить заказ</a>
       </div>
     </div>
@@ -35,6 +41,18 @@
         </div>
         <div class="header-user-navigation">
           <button type="button" aria-label="Выйти из учётной записи" class="button-exit button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+              <path d="M17.881 14.166C15.737 13.431 13.625 12.5 12.674 11.776C12.017 11.275 11.904 10.158 
+              12.157 9.361C13.275 8.458 14.021 6.884 14.021 5.083C14.021 2.276 12.221 0 10 0C7.77902 0 5.97901 
+              2.276 5.97901 5.083C5.97901 6.884 6.72501 8.457 7.84201 9.36C8.09501 10.158 7.98302 11.275 7.32502 
+              11.776C6.37502 12.5 4.26201 13.43 2.11801 14.166C-0.0259852 14.902 1.48343e-05 18 1.48343e-05 18H20C20 
+              18 20.025 14.901 17.881 14.166Z" fill="#C5C5C5"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"><g fill="#c5c5c5">
+              <path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/>
+              <path fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 
+              1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g>
+            </svg>
             Равшан Джамшутович
           </button>
           <div class="catalog-user">
@@ -69,11 +87,29 @@
     <div class="sort">
       <h3 class="sort-title">Сортировка:</h3>
       <ul class="sort-list">
-        <li><button type="button" class="sort-button button">По цене</button></li>
-        <li><button type="button" class="sort-button button">По типу</button></li>
-        <li><button type="button" class="sort-button button">По функционалу</button></li>
-        <li><button type="button" class="sort-button button">По возрастанию</button></li>
-        <li><button type="button" class="sort-button button">По убыванию</button></li>
+        <li>
+          <button type="button" class="sort-button button">По цене</button>
+        </li>
+        <li>
+          <button type="button" class="sort-button button">По типу</button>
+        </li>
+        <li>
+          <button type="button" class="sort-button button">По функционалу</button>
+        </li>
+        <li>
+          <button type="button" class="up-button button" aria-label="По возрастанию">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+              <path fill="#231F20" d="M5.5 0L0 10h11z"/>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="down-button button" aria-label="По убыванию">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+              <path fill="#231F20" d="M5.5 10L0 0h11"/>
+            </svg>
+          </button>
+        </li>
       </ul>
     </div>
     <section class="filter">
@@ -122,7 +158,7 @@
           <span>30500 Р.</span>
           <div class="price">25500 Р.</div>
         </li>
-        <li class="catalog-item">
+        <li class="catalog-item new">
           <div class="wrapper">
             <img src="img/snippet-945 copy 2.jpg" width="144" height="128" alt="BOSCH BFG 6000">
           </div>
@@ -130,7 +166,7 @@
           <span>30500 Р.</span>
           <div class="price">25500 Р.</div>
         </li>
-        <li class="catalog-item">
+        <li class="catalog-item new">
           <div class="wrapper">
             <img src="img/snippet-18927 copy 3.jpg" width="127" height="112" alt="BOSCH BFG 3000">
           </div>
@@ -146,14 +182,14 @@
           <span>30500 Р.</span>
           <div class="price">25500 Р.</div>
         </li>
-        <li class="catalog-item">
+        <li class="catalog-item new">
           <div class="wrapper">
             <img src="img/snippet-18927 copy 3.jpg" width="127" height="112" alt="BOSCH BFG 2000">
           </div>
           <h3>Перфоратор BOSCH BFG 2000</h3>
           <div class="price">12500 Р.</div>
         </li>
-        <li class="catalog-item">
+        <li class="catalog-item new">
           <div class="wrapper">
             <img src="img/snippet-18927 copy 3.jpg" width="127" height="112" alt="BOSCH BFG 3000">
           </div>
@@ -169,7 +205,7 @@
           <span>30500 Р.</span>
           <div class="price">25500 Р.</div>
         </li>
-        <li class="catalog-item">
+        <li class="catalog-item new">
           <div class="wrapper">
             <img src="img/snippet-18927 copy 3.jpg" width="127" height="112" alt="BOSCH BFG 2000">
           </div>
@@ -189,8 +225,8 @@
     <div class="container">
       <h2>Пара слов о перфораторах</h2>
       <p>
-        Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br> Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта
-        и отбойного молотка.<br> В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+        Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br> Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
+        шуруповерта и отбойного молотка.<br> В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.
       </p>
     </div>
   </section>
