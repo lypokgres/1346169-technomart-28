@@ -127,14 +127,14 @@ img {
   outline: none;
 }
 
-.header-search:hover path, 
-.header-search:focus {
+.header-search:hover path {
   opacity: 1;
 }
 
-.header-search input:focus path {
+.header-search input:focus + svg path {
   fill: red;
-} 
+  opacity: 1;
+}
 
 .header-search input:active,
 .header-search input:focus, 
@@ -804,6 +804,7 @@ img {
 .footer-nav-list a:active,
 .product-nav-list a:active {
   opacity: 0.5;
+  text-decoration: none;
 }
 
 .footer-nav-item, 
@@ -878,6 +879,7 @@ img {
 
 .meta a:active {
   color: var(--basic-red);
+  text-decoration: none;
 }
 
 .popup-feedback {
