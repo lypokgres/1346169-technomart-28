@@ -31,7 +31,7 @@
 
 body {
   min-width: 960px;
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
 }
 
 a {
@@ -117,7 +117,7 @@ img {
 }
 
 .header-search input {
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 24px;
   border: none;
@@ -659,7 +659,7 @@ img {
 
 .services p {
   margin: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 24px;
   margin-top: 30px;
@@ -801,7 +801,7 @@ img {
 
 .about p,
 .contacts p {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 24px;
   margin: 0;
@@ -1009,7 +1009,7 @@ img {
 
 .popup-feedback label {
   display: block;
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 11px;
@@ -1025,7 +1025,7 @@ img {
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 12px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
@@ -1053,7 +1053,7 @@ img {
   resize: none;
   border: 2px solid var(--basic-light-grey);
   border-radius: 2px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #A9A9A9;
@@ -1124,7 +1124,7 @@ img {
 }
 
 .page-catalog {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   display: grid;
   grid-template-columns: 220px 1fr;
   align-items: start;
@@ -1138,7 +1138,7 @@ img {
 }
 
 .button-exit {
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   background-color: var(--basic-white);
   color: var(--basic-black);
   font-size: 21px;
@@ -1307,7 +1307,7 @@ img {
 }
 
 .catalog-title {
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-weight: normal;
   min-height: 60px;
   font-size: 30px;
@@ -1543,7 +1543,7 @@ img {
 .new::after {
   content: "new";
   position: absolute;
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 14px;
   line-height: 18px;
   width: 100px;
@@ -1597,7 +1597,7 @@ img {
 }
 
 .buy-button {
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 14px;
   line-height: 18px;
   align-self: center;
@@ -1633,7 +1633,7 @@ img {
 }
 
 .to-bookmarks-button {
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 14px;
   line-height: 18px;
   width: 135px;
@@ -1696,7 +1696,7 @@ img {
 }
 
 .paginator a {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: var(--basic-black);
@@ -1724,7 +1724,7 @@ img {
 
 .hammer-drill-definition {
   background-color: var(--basic-background);
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 24px;
   padding-bottom: 68px;
