@@ -425,7 +425,6 @@ img {
 }
 
 .categories-item h3 {
-  margin: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -455,6 +454,7 @@ img {
 .hammer-drill,
 .drill {
   position: relative;
+  display: none;
 }
 
 .hammer-drill img,
@@ -505,13 +505,13 @@ img {
   background-color: var(--special-error);
 }
 
-.slider-controls {
+.slider-nav {
   position: absolute;
   left: 295px;
   bottom: 36px;
 }
 
-.slider-controls button {
+.slider-nav button {
   padding: 0;
   margin-right: 5px;
   width: 10px;
@@ -521,12 +521,8 @@ img {
   cursor: pointer;
 }
 
-.slider-controls .current {
+.slider-nav .current {
   background-color: var(--basic-red);
-}
-
-.slide {
-  display: none;
 }
 
 .slide-current {
@@ -537,7 +533,7 @@ img {
   position: relative;
 }
 
-.slide::before {
+.slider-controls .previous {
   content: "";
   position: absolute;
   width: 22px;
@@ -545,13 +541,15 @@ img {
   background-image: url("../img/icon-left.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
   z-index: 1;
   top: 122px;
   left: 24px;
   cursor: pointer;
 }
 
-.slide::after {
+.slider-controls .following {
   content: "";
   position: absolute;
   width: 22px;
@@ -559,6 +557,8 @@ img {
   background-image: url("../img/icon-right.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
   z-index: 1;
   top: 122px;
   right: 22px;
