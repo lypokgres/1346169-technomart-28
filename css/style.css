@@ -861,6 +861,7 @@ img {
 }
 
 .contacts-map {
+  display: block;
   border: none;
   background-color: transparent;
   padding: 0;
@@ -869,6 +870,8 @@ img {
 }
 
 .contacts-button {
+  display: block;
+  text-align: center;
   width: 300px;
   padding-top: 11px;
   padding-bottom: 9px;
