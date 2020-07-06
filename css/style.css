@@ -904,6 +904,15 @@ img {
   background-color: var(--special-error);
 }
 
+.footer-address, 
+.footer-phone {
+  color: var(--basic-white);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .footer-nav-list,
 .product-nav-list {
   display: flex;
@@ -914,7 +923,6 @@ img {
   margin-top: 35px;
 }
 
-.footer-nav,
 .footer-nav-list a {
   color: var(--basic-background);
   font-size: 18px;
