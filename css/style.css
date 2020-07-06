@@ -1688,7 +1688,7 @@ img {
   margin-bottom: 54px;
 }
 
-.buy-button {
+.product-buy-button {
   font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -1704,7 +1704,7 @@ img {
   position: relative;
 }
 
-.buy-button::before {
+.product-buy-button::before {
   content: "";
   position: absolute;
   width: 15px;
@@ -1716,15 +1716,15 @@ img {
   left: 30px;
 }
 
-.buy-button:hover {
+.product-buy-button:hover {
   background-color: var(--special-success);
 }
 
-.buy-button:active {
+.product-buy-button:active {
   background-color: #518534;
 }
 
-.to-bookmarks-button {
+.product-to-bookmarks-button {
   font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -1737,11 +1737,11 @@ img {
   color: var(--basic-grey);
 }
 
-.to-bookmarks-button:hover {
+.product-to-bookmarks-button:hover {
   border: 3px solid var(--basic-grey);
 }
 
-.to-bookmarks-button:active {
+.product-to-bookmarks-button:active {
   opacity: 0.5;
 }
 
