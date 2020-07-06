@@ -1429,20 +1429,20 @@ img {
   list-style: none;
 }
 
-.range {
+.filter-price {
   padding-bottom: 25px;
   margin-bottom: 14px;
 }
 
-.range legend {
+.filter-price legend {
   margin-bottom: 14px;
 }
 
-.range-filter {
+.price-range {
   width: 220px;
 }
 
-.range-controls {
+.range {
   position: relative;
   height: 41px;
   padding-top: 39px;
@@ -1453,19 +1453,19 @@ img {
   margin-bottom: 9px;
 }
 
-.range-controls .scale {
+.range-scale {
   width: 180px;
   height: 2px;
   background-color: #d7dcde;
 }
 
-.range-controls .bar {
+.range-bar {
   width: 70%;
   height: 2px;
   background-color: #00ca74;
 }
 
-.range-controls .toggle {
+.range-toggle {
   position: absolute;
   top: 31px;
   left: 0;
@@ -1479,11 +1479,11 @@ img {
   cursor: pointer;
 }
 
-.range-controls .toggle-min {
+.toggle-min {
   left: 18px;
 }
 
-.range-controls .toggle-max {
+.toggle-max {
   left: 140px;
 }
 
@@ -1508,12 +1508,12 @@ img {
   background-color: var(--special-grey);
 }
 
-.checkbox {
+.filter-brands {
   padding-bottom: 28px;
   margin-bottom: 15px;
 }
 
-.checkbox legend {
+.filter-brands legend {
   margin-bottom: 20px;
 }
 
@@ -1554,12 +1554,12 @@ img {
   opacity: 0.7;
 }
 
-.radio {
+.filter-power {
   margin-bottom: 39px;
   border: none;
 }
 
-.radio legend {
+.filter-power legend {
   margin-bottom: 26px;
 }
 
