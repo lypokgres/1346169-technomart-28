@@ -389,11 +389,6 @@ img {
   margin-bottom: 59px;
 }
 
-.slider-list {
-  margin: 0;
-  padding: 0;
-}
-
 .categories-item {
   position: relative;
   list-style: none;
@@ -403,54 +398,42 @@ img {
   padding-left: 23px;
 }
 
-.slider-item  {
-  position: relative;
-  list-style: none;
-  overflow: hidden;
-}
-
-.slider {
-  position: relative;
-  grid-column: 1 / 3;
-  grid-row: 2 / 4;
-}
-
-.categories-list .materials {
+.category-materials {
   background-color: var(--special-warning);
   background-image: url("../img/icon-1.svg");
   background-repeat: no-repeat;
   background-position: 213px;
 }
 
-.categories-list .tool {
+.category-tool {
   background-color: var(--special-blue);
   background-image: url("../img/icon-2.svg");
   background-repeat: no-repeat;
   background-position: 194px;
 }
 
-.categories-list .equipment {
+.category-equipment {
   background-color: var(--special-lilac);
   background-image: url("../img/icon-3.svg");
   background-repeat: no-repeat;
   background-position: 191px;
 }
 
-.categories-list .discounts {
+.category-discounts {
   background-color: var(--special-light-green);
   background-image: url("../img/icon-4.svg");
   background-repeat: no-repeat;
   background-position: 196px;
 }
 
-.categories-list .delivery {
+.category-delivery {
   background-color: var(--special-warning);
   background-image: url("../img/icon-5.svg");
   background-repeat: no-repeat;
   background-position: 191px;
 }
 
-.categories-item h3 {
+.category-title {
   margin: 0;
   font-weight: 700;
   font-size: 24px;
@@ -475,19 +458,31 @@ img {
   background-color: rgba(169, 169, 169, 0.3)
 }
 
-.hammer-drill,
-.drill {
+.slider {
+  background-color: #b5a490;
   position: relative;
-  display: none;
+  grid-column: 1 / 3;
+  grid-row: 2 / 4;
+  width: 620px;
+  height: 266px;
 }
 
-.hammer-drill img,
-.drill img {
+.slider-list {
+  margin: 0;
+  padding: 0;
+}
+
+.slider-item  {
+  position: relative;
+  list-style: none;
+  display: none
+}
+
+.slider-img {
   display: block;
 }
 
-.hammer-drill h3,
-.drill h3 {
+.slider-title {
   margin: 0;
   font-weight: 700;
   font-size: 36px;
@@ -499,8 +494,7 @@ img {
   left: 24px;
 }
 
-.hammer-drill p,
-.drill p {
+.slider-description {
   margin: 0;
   font-size: 18px;
   line-height: 24px;
@@ -510,8 +504,7 @@ img {
   left: 24px;
 }
 
-.hammer-drill .slide-button,
-.drill .slide-button {
+.slider-button {
   display: block;
   width: 192px;
   padding-top: 11px;
@@ -522,10 +515,8 @@ img {
   left: 24px;
 }
 
-.hammer-drill .slide-button:active,
-.drill .slide-button:active,
-.popular-goods-button:active,
-.popular-manufacturers-button:active {
+.slider-button:active,
+.popular-button:active {
   background-color: var(--special-error);
 }
 
@@ -535,7 +526,7 @@ img {
   bottom: 36px;
 }
 
-.slider-nav button {
+.slider-nav-dot {
   padding: 0;
   margin-right: 5px;
   width: 10px;
@@ -545,7 +536,7 @@ img {
   cursor: pointer;
 }
 
-.slider-nav .current {
+.slider-nav-dot+.current {
   background-color: var(--basic-red);
 }
 
@@ -553,11 +544,7 @@ img {
   display: block;
 }
 
-.slider-list {
-  position: relative;
-}
-
-.slider-controls .previous {
+.slider-arrow-previous {
   content: "";
   position: absolute;
   width: 22px;
@@ -572,7 +559,7 @@ img {
   cursor: pointer;
 }
 
-.slider-controls .following {
+.slider-arrow-next {
   content: "";
   position: absolute;
   width: 22px;
