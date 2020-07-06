@@ -400,35 +400,35 @@ img {
 
 .category-materials {
   background-color: var(--special-warning);
-  background-image: url("../img/icon-1.svg");
+  background-image: url("../img/icon-materials.svg");
   background-repeat: no-repeat;
   background-position: 213px;
 }
 
 .category-tool {
   background-color: var(--special-blue);
-  background-image: url("../img/icon-2.svg");
+  background-image: url("../img/icon-tool.svg");
   background-repeat: no-repeat;
   background-position: 194px;
 }
 
 .category-equipment {
   background-color: var(--special-lilac);
-  background-image: url("../img/icon-3.svg");
+  background-image: url("../img/icon-equipment.svg");
   background-repeat: no-repeat;
   background-position: 191px;
 }
 
 .category-discounts {
   background-color: var(--special-light-green);
-  background-image: url("../img/icon-4.svg");
+  background-image: url("../img/icon-discounts.svg");
   background-repeat: no-repeat;
   background-position: 196px;
 }
 
 .category-delivery {
   background-color: var(--special-warning);
-  background-image: url("../img/icon-5.svg");
+  background-image: url("../img/icon-delivery.svg");
   background-repeat: no-repeat;
   background-position: 191px;
 }
@@ -473,7 +473,6 @@ img {
 }
 
 .slider-item  {
-  position: relative;
   list-style: none;
   display: none
 }
@@ -715,7 +714,7 @@ img {
   position: absolute;
   width: 10px;
   height: 279px;
-  background-image: url("../img/Object1.png");
+  background-image: url("../img/shadow.png");
   background-repeat: repeat;
   background-position: 0 0;
   right: 0;
@@ -741,7 +740,7 @@ img {
   position: absolute;
   width: 468px;
   height: 261px;
-  background-image: url("../img/Layer1311.png");
+  background-image: url("../img/services-delivery.png");
   background-repeat: no-repeat;
   bottom: 5px;
   right: 0;
@@ -752,7 +751,7 @@ img {
   position: absolute;
   width: 389px;
   height: 283px;
-  background-image: url("../img/Layer130.png");
+  background-image: url("../img/services-guarantee.png");
   background-repeat: no-repeat;
   bottom: 0;
   right: 0;
@@ -763,7 +762,7 @@ img {
   position: absolute;
   width: 465px;
   height: 285px;
-  background-image: url("../img/Layer119.png");
+  background-image: url("../img/services-credit.png");
   background-repeat: no-repeat;
   bottom: 0;
   right: 0;
@@ -862,8 +861,10 @@ img {
 
 .contacts-map {
   display: block;
+  width: 300px;
+  height: 158px;
   border: none;
-  background-color: transparent;
+  background-color: #edeae4;
   padding: 0;
   cursor: pointer;
   margin-bottom: 21px;
