@@ -1206,6 +1206,10 @@ img {
   margin-bottom: 7px;
 }
 
+.header-user-profile {
+  color: var(--basic-black);
+}
+
 .header-user-profile svg {
   position: absolute;
   left: 15px;
@@ -1263,73 +1267,6 @@ img {
 .header-link-profile:active {
   color: var(--basic-light-grey);
 } 
-
-/* .button-exit {
-  font-family: 'Cuprum', 'Arial', sans-serif;
-  background-color: var(--basic-white);
-  color: var(--basic-black);
-  font-size: 21px;
-  line-height: 21px;
-  text-transform: none;
-  padding-top: 12px;
-  padding-bottom: 13px;
-  padding-left: 57px;
-  padding-right: 57px;
-  margin-bottom: 5px;
-  position: relative;
-}
-
-.button-exit:hover path {
-  fill: var(--basic-grey);
-}
-
-.button-exit:active path {
-  fill: var(--basic-light-grey);
-}
-
-.button-exit svg:first-child {
-  position: absolute;
-  left: 15px;
-}
-
-.button-exit svg:last-child {
-  position: absolute;
-  right: 17px;
-}
-
-.catalog-user {
-  display: flex;
-  width: 210px;
-  margin: auto;
-  justify-content: space-between;
-  position: relative;
-}
-
-.catalog-user a {
-  font-size: 16px;
-  line-height: 18px;
-  color: var(--basic-grey);
-}
-
-.catalog-user a:first-child::after {
-  content: "";
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  background-color: var(--basic-grey);
-  border-radius: 50%;
-  top: 6px;
-  left: 88px;
-}
-
-.catalog-user a:hover {
-  color: var(--basic-red);
-}
-
-.button-exit:active,
-.catalog-user a:active {
-  color: var(--basic-light-grey);
-} */
 
 .inner-page .header {
   margin-bottom: 17px;
@@ -1634,6 +1571,10 @@ img {
   opacity: 0.7;
 }
 
+.filter-checkbox:focus+label {
+  outline: 2px solid #e5e5e5;
+}
+
 .filter-power {
   margin-bottom: 39px;
   border: none;
@@ -1667,6 +1608,10 @@ img {
   top: -3px;
   left: -35px;
   opacity: 0.7;
+}
+
+.filter-radio:focus+label {
+  outline: 2px solid #e5e5e5;
 }
 
 .filter-checkbox:hover+label::before,
