@@ -1588,6 +1588,11 @@ img {
   outline: 2px solid var(--button-gray);
 }
 
+.filter-checkbox:disabled+label {
+  opacity: 0.4;
+  cursor: default;
+}
+
 .filter-power {
   margin-bottom: 39px;
   border: none;
@@ -1630,6 +1635,11 @@ img {
 .filter-checkbox:hover+label::before,
 .filter-radio:hover+label::before {
   opacity: 1;
+}
+
+.filter-radio:disabled+label {
+  opacity: 0.4;
+  cursor: default;
 }
 
 .filter-button {
