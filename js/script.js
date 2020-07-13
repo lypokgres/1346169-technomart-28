@@ -28,6 +28,7 @@ window.addEventListener("keydown", function (evt) {
     }
 });
 
+
 var feedbackLink = document.querySelector(".contacts-button");
 var feedbackPopup = document.querySelector(".popup-feedback");
 var feedbackClose = document.querySelector(".feedback-button-close");
@@ -36,7 +37,7 @@ var feedbackName = document.querySelector("[name=name]");
 var feedbackEmail = document.querySelector("[name=email]");
 var feedbackMessage = document.querySelector("[name=message]");
 
-feedbackLink.addEventListener("click", function(evt) {
+feedbackLink.addEventListener("click", function (evt) {
     evt.preventDefault();
     feedbackPopup.classList.add("popup-show");
     feedbackName.focus();
@@ -48,13 +49,22 @@ feedbackLink.addEventListener("click", function(evt) {
     }
 });
 
-feedbackClose.addEventListener("click", function(evt) {
+feedbackClose.addEventListener("click", function (evt) {
     evt.preventDefault();
     feedbackPopup.classList.remove("popup-show");
     feedbackPopup.classList.remove("popup-error");
 });
 
-window.addEventListener("keydown", function(evt) {
+feedbackForm.addEventListener("submit", function (evt) {
+    if (!feedbackName.value || !feedbackEmail.value || !feedbackMessage.value) {
+        evt.preventDefault();
+        feedbackPopup.classList.remove("popup-error");
+        feedbackPopup.offsetWidth = feedbackPopup.offsetWidth;
+        feedbackPopup.classList.add("popup-error");
+    }
+})
+
+window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
         if (feedbackPopup.classList.contains("popup-show")) {
             evt.preventDefault();

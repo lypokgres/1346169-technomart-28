@@ -29,6 +29,7 @@
   --background-map: #edeae4;
   --border-gray: #EAEAEA;
   --font-gray: #A9A9A9;
+  --button-red: #ca2c37;
   --button-gray: #E5E5E5;
   --button-dark-green: #367315;
   --button-acyive-green: #518534;
@@ -130,7 +131,7 @@ img {
   width: 100%;
   padding-top: 9px;
   padding-left: 42px;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
   color: var(--white);
   font: inherit;
   background-color: transparent;
@@ -147,10 +148,11 @@ img {
   top: 12px;
   width: 17px;
   height: 17px;
+  opacity: 0.3;
 }
 
 .header-search:hover+svg {
-  opacity: 0.3;
+  opacity: 1;
 }
 
 .header-search:focus+svg {
@@ -201,7 +203,7 @@ img {
 }
 
 .header-order {
-  width: 151px;
+  width: 150px;
   padding-top: 9px;
   padding-bottom: 9px;
   color: var(--basic-white);
@@ -291,10 +293,11 @@ img {
   position: relative;
   padding-top: 46px;
   padding-left: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .header-description {
+  width: 197px;
   color: var(--basic-red);
   font-style: italic;
   font-size: 16px;
@@ -407,7 +410,7 @@ img {
   font-size: 18px;
   line-height: 24px;
   padding-top: 16px;
-  padding-bottom: 21px;
+  padding-bottom: 20px;
   padding-right: 29px;
   padding-left: 29px;
 }
@@ -445,7 +448,7 @@ img {
   list-style: none;
   overflow: hidden;
   padding-top: 20px;
-  padding-bottom: 22px;
+  padding-bottom: 21px;
   padding-left: 23px;
 }
 
@@ -570,6 +573,11 @@ img {
   background-color: var(--special-error);
 }
 
+.slider-button:hover,
+.popular-button:hover {
+  background-color: var(--button-red);
+}
+
 .slider-nav {
   position: absolute;
   left: 295px;
@@ -627,7 +635,7 @@ img {
 .popular-products-list {
   margin: 0;
   padding: 0;
-  margin-bottom: 70px;
+  margin-bottom: 71px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -635,11 +643,6 @@ img {
 
 .popular-products-list span {
   font-family: 'PT Sans', 'Arial', sans-serif;
-}
-
-.popular-products-list .product-item:first-child img {
-  margin-left: 5px;
-  margin-top: 5px;
 }
 
 .popular-manufacturers-list {
@@ -675,8 +678,8 @@ img {
   width: 192px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-right: 15px;
-  margin-bottom: 4px;
+  margin-right: 14px;
+  margin-bottom: 2px;
   text-align: center;
 }
 
@@ -718,6 +721,11 @@ img {
   padding-top: 64px;
 }
 
+.services .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .services-item {
   display: none;
 }
@@ -727,6 +735,7 @@ img {
 }
 
 .services-title {
+  flex-basis: 100%;
   margin: 0;
   margin-bottom: 25px;
   font-weight: 400;
@@ -736,8 +745,9 @@ img {
 }
 
 .services p {
+  flex-basis: 100%;
   margin: 0;
-  margin-bottom: 75px;
+  margin-bottom: 72px;
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -745,7 +755,6 @@ img {
 
 .services-button-list,
 .services-list {
-  display: inline-block;
   vertical-align: top;
   list-style: none;
   padding: 0;
@@ -796,22 +805,19 @@ img {
 }
 
 .services-item {
-  position: relative;
-  vertical-align: top;
-  padding-left: 76px;
+  margin-left: 80px;
   width: 619px;
-  height: 283px;
+  min-height: 283px;
 }
 
-.services-list .delivery::after {
-  content: "";
-  position: absolute;
-  width: 468px;
-  height: 261px;
-  background-image: url("../img/services-delivery.png");
+.delivery {
+  background-image: url(../img/services-delivery.png);
   background-repeat: no-repeat;
-  bottom: 5px;
-  right: 0;
+  background-position: 151px 19px;
+}
+
+.delivery p {
+  width: 275px;
 }
 
 .services-list .guarantee::after {
@@ -836,6 +842,10 @@ img {
   right: -10px;
 }
 
+.credit p {
+  margin-bottom: 27px;
+}
+
 .services-item h3 {
   margin: 0;
   margin-bottom: 26px;
@@ -844,10 +854,6 @@ img {
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-grey);
-}
-
-.services-item p {
-  margin-bottom: 28px;
 }
 
 .credit-button {
@@ -861,7 +867,7 @@ img {
 .index-column {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 69px;
+  margin-bottom: 70px;
   margin-top: 70px;
 }
 
@@ -887,16 +893,12 @@ img {
   margin: 0;
 }
 
-.about p {
-  margin-bottom: 7px;
-}
-
-.about h2+p {
+.about .about-description {
   margin-bottom: 26px;
 }
 
 .contacts p {
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 }
 
 .about-list {
@@ -928,7 +930,7 @@ img {
   width: 220px;
   text-align: center;
   padding-top: 11px;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
 }
 
 .contacts-map {
@@ -939,7 +941,7 @@ img {
   background-color: var(--background-map);
   padding: 0;
   cursor: pointer;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 
 .contacts-button {
@@ -947,7 +949,7 @@ img {
   text-align: center;
   width: 300px;
   padding-top: 11px;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
 }
 
 .footer {
@@ -962,7 +964,7 @@ img {
 
 .footer-nav {
   background-color: var(--basic-grey);
-  padding-bottom: 54px;
+  padding-bottom: 53px;
 }
 
 .footer-logo {
@@ -978,6 +980,10 @@ img {
 
 .footer-logo:active {
   background-color: var(--special-error);
+}
+
+.footer-contact {
+  width: 323px;
 }
 
 .footer-address, 
@@ -1355,7 +1361,7 @@ img {
   list-style: none;
   grid-column: 1 / -1;
   grid-row: 1 / 2;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .breadcrumbs li {
@@ -1438,6 +1444,10 @@ img {
 }
 
 .sort-list path {
+  fill: var(--basic-light-grey);
+}
+
+.range-button path {
   fill: var(--basic-light-grey);
 }
 
@@ -1663,7 +1673,7 @@ img {
 }
 
 .filter-power {
-  margin-bottom: 39px;
+  margin-bottom: 37px;
   border: none;
 }
 
@@ -1730,16 +1740,20 @@ img {
 }
 
 .product-item {
-  width: 220px;
+  width: 219px;
+  min-height: 316px;
   border: 1px solid var(--border-gray);
   list-style: none;
-  min-height: 316px;
   position: relative;
   overflow: hidden;
 }
 
 .products-list .product-item {
   margin-bottom: 18px;
+}
+
+.product-item:hover img {
+  display: none;
 }
 
 
@@ -1765,14 +1779,39 @@ img {
   top: 6px;
 }
 
+.product-BFG-9000 {
+  margin-top: 6px;
+  margin-left: 17px;
+  margin-bottom: 5px;
+}
+
+.product-BFG-6000 {
+  margin-top: 21px;
+  margin-left: 33px;
+  margin-bottom: 27px;
+}
+
+.product-BFG-3000 {
+  margin-top: 28px;
+  margin-left: 39px;
+  margin-bottom: 36px;
+}
+
+.product-BFG-2000 {
+  margin-top: 28px;
+  margin-left: 40px;
+  margin-bottom: 36px;
+}
+
 .product-item h3 {
+  margin: 0;
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 20px;
   max-width: 160px;
   text-align: center;
-  margin: auto;
-  margin-bottom: 10px;
+  margin-left: 30px;
+  margin-bottom: 8px;
 }
 
 .old-price {
@@ -1783,22 +1822,6 @@ img {
   text-transform: uppercase;
   color: var(--font-gray);
   margin-left: 75px;
-}
-
-.product-item .product-image {
-  display: flex;
-  width: 184px;
-  height: 164px;
-  margin-bottom: 15px;
-  margin-left: 12px;
-}
-
-.product-item:hover .product-image {
-  display: none;
-}
-
-.product-item img {
-  margin: auto;
 }
 
 .product-item .product-buttons {
@@ -1889,8 +1912,7 @@ img {
   -webkit-clip-path: polygon(0 0, 121px 0, 100% 50%, 121px 100%, 0 100%);
           clip-path: polygon(0 0, 121px 0, 100% 50%, 121px 100%, 0 100%);
   border-radius: 3px 0 0 3px;
-  margin-top: 12px;
-  margin-bottom: 21px;
+  margin-top: 13px;
   margin-left: 45px;
 }
 
@@ -1947,7 +1969,7 @@ img {
   font-size: 13px;
   line-height: 24px;
   padding-top: 64px;
-  padding-bottom: 60px;
+  padding-bottom: 57px;
 }
 
 .hammer-drill-definition h2 {
@@ -2009,6 +2031,7 @@ img {
   width: 192px;
   padding-top: 10px;
   padding-bottom: 10px;
+  vertical-align: middle;
 }
 
 .popup-cart .button-continue {
@@ -2021,6 +2044,11 @@ img {
   display: block;
   -webkit-animation: bounce 0.6s;
           animation: bounce 0.6s;
+}
+
+.popup-error {
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 @-webkit-keyframes bounce {
@@ -2056,5 +2084,49 @@ img {
 
   100% {
     transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
   }
 }
